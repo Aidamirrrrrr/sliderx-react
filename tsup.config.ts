@@ -9,4 +9,10 @@ export default defineConfig({
   clean: true,
   external: ['react', 'react-dom'],
   treeshake: true,
+  esbuildOptions(options) {
+    options.loader = {
+      ...options.loader,
+      '.css': 'copy'
+    }
+  }
 }) 
