@@ -1,0 +1,32 @@
+# Исходники
+src/
+
+# Конфигурационные файлы
+tsconfig.json
+tsup.config.ts
+.eslintrc
+.prettier*
+.gitignore
+
+# Зависимости
+node_modules/
+bun.lock
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Тесты
+__tests__/
+*.test.*
+*.spec.*
+
+# IDE и редакторы
+.vscode/
+.idea/
+*.sublime-*
+.DS_Store
+
+# Прочее
+examples/
+docs/
+.github/ 

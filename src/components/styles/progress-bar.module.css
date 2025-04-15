@@ -1,0 +1,15 @@
+.progressBarContainer {
+    height: 8px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.progressBarFill {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: blue;
+}
