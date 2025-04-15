@@ -5,13 +5,13 @@
 ## Установка
 
 ```bash
-npm install sliderx
+npm install sliderx-react
 # или
-yarn add sliderx
+yarn add sliderx-react
 # или
-bun add sliderx
+bun add sliderx-react
 # или
-pnpm add sliderx
+pnpm add sliderx-react
 ```
 
 ## Основные возможности

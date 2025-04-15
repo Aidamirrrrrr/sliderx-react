@@ -1,12 +1,12 @@
 {
-  "name": "sliderx",
+  "name": "sliderx-react",
   "version": "0.0.1",
   "description": "Современный и гибкий React-компонент для создания слайдеров с поддержкой различных эффектов",
   "author": "Aidamir Kambiev",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/username/sliderx.git"
+    "url": "https://github.com/Aidamirrrrrr/sliderx"
   },
   "keywords": [
     "react",
