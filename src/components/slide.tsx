@@ -2,7 +2,6 @@ import type { CSSProperties, ReactNode } from 'react'
 
 import cn from 'classnames'
 
-import cls from './styles/slide.module.css'
 import { useSliderContext } from './slider-context'
 
 /**
@@ -44,7 +43,7 @@ export const Slide = ({ index, className, children }: SlideProps) => {
     const { getSlideProps } = useSliderContext()
 
     return (
-        <div className={cn(className, cls.slide)} {...getSlideProps(index)}>
+        <div className={cn(className, 'sliderx-slide')} {...getSlideProps(index)}>
             {children}
         </div>
     )

@@ -13,3 +13,16 @@
     top: 0;
     background: blue;
 }
+
+.slide {
+    position: absolute;
+    will-change: transform;
+    width: auto;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    user-select: none;
+    width: 100%;
+}

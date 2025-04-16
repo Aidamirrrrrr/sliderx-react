@@ -1,7 +1,6 @@
 import cn from 'classnames'
 
 import { useSliderContext } from './slider-context'
-import cls from './styles/progress-bar.module.css'
 
 /**
  * Тип для функции получения свойств прогресс-бара
@@ -39,11 +38,11 @@ export const ProgressBar = ({ className, fillClassName }: ProgressBarProps) => {
 
     return (
         <div
-            className={cn(className, cls.progressBarContainer)}
+            className={cn(className, 'sliderx-progress-bar')}
             {...getProgressBarContainerProps()}
         >
             <div
-                className={cn(fillClassName, cls.progressBarFill)}
+                className={cn(fillClassName, 'sliderx-progress-bar-fill')}
                 {...getProgressBarProps()}
             ></div>
         </div>

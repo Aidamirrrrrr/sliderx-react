@@ -2,7 +2,6 @@ import type { ReactNode } from 'react'
 
 import cn from 'classnames'
 
-import cls from './styles/slider.module.css'
 import { useSliderContext } from './slider-context'
 
 /**
@@ -40,7 +39,7 @@ export const SliderWrapper = ({ className, children }: SliderWrapperProps) => {
     const { getContainerProps } = useSliderContext()
 
     return (
-        <div className={cn(className, cls.slider)} {...getContainerProps()}>
+        <div className={cn(className, 'sliderx-slider')} {...getContainerProps()}>
             {children}
         </div>
     )

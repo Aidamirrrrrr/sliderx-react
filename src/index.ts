@@ -12,3 +12,5 @@ export { DEFAULT_SLIDER_CONFIG } from './config'
 
 export type { SliderContextType } from './components/slider-context'
 export type { SliderConfig } from './config'
+
+import './styles.css'
