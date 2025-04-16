@@ -4,11 +4,6 @@ declare module '*.module.css' {
 }
 
 declare module '*.css' {
-    const css: string
-    export default css
-}
-
-declare module '*.css' {
     const content: any
     export default content
 }
