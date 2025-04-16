@@ -1,6 +1,6 @@
 {
   "name": "sliderx-react",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Современный и гибкий React-компонент для создания слайдеров с поддержкой различных эффектов",
   "author": "Aidamir Kambiev",
   "license": "MIT",
@@ -51,6 +51,7 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "tsup": "^8.4.0",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "typescript-plugin-css-modules": "^5.1.0"
   }
 }

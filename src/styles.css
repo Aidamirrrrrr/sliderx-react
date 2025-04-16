@@ -1,4 +1,4 @@
-.progressBarContainer {
+.sliderx-progress-bar {
     height: 8px;
     background: white;
     position: relative;
@@ -6,7 +6,7 @@
     cursor: pointer;
 }
 
-.progressBarFill {
+.sliderx-progress-bar-fill {
     position: absolute;
     height: 100%;
     left: 0;
@@ -14,13 +14,13 @@
     background: blue;
 }
 
-.slide {
+.sliderx-slide {
     position: absolute;
     will-change: transform;
     width: auto;
 }
 
-.slider {
+.sliderx-slider {
     display: flex;
     justify-content: center;
     user-select: none;
