@@ -1,3 +1,5 @@
+import './styles.css'
+
 export { Slider } from './components/slider'
 export { SliderProvider } from './components/slider-provider'
 export { SliderWrapper } from './components/slider-wrapper'
@@ -12,19 +14,3 @@ export { DEFAULT_SLIDER_CONFIG } from './config'
 
 export type { SliderContextType } from './components/slider-context'
 export type { SliderConfig } from './config'
-
-import styles from './styles.css'
-
-const injectStyles = () => {
-  if (typeof document !== 'undefined') {
-    const styleElement = document.createElement('style')
-    styleElement.textContent = styles
-    styleElement.setAttribute('data-sliderx', 'true')
-    
-    if (!document.querySelector('style[data-sliderx="true"]')) {
-      document.head.appendChild(styleElement)
-    }
-  }
-}
-
-injectStyles()

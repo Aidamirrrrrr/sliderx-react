@@ -14,6 +14,16 @@ bun add sliderx-react
 pnpm add sliderx-react
 ```
 
+После установки не забудьте импортировать стили:
+
+```jsx
+// Импорт стилей (обязательно)
+import 'sliderx-react/dist/index.css';
+
+// Импорт компонентов
+import { Slider } from 'sliderx-react';
+```
+
 ## Основные возможности
 
 - 🌀 Эффект карусели с поворотом слайдов
@@ -26,7 +36,8 @@ pnpm add sliderx-react
 ## Быстрый старт
 
 ```jsx
-import { Slider } from 'sliderx';
+import 'sliderx-react/dist/index.css';
+import { Slider } from 'sliderx-react';
 
 const images = [
   { id: 1, src: '/image1.jpg', alt: 'Image 1' },
@@ -85,7 +96,8 @@ SliderX предоставляет множество опций для наст
 Для более гибкого управления слайдером вы можете использовать хук `useSlider`:
 
 ```jsx
-import { useSlider, SliderProvider, SliderWrapper, SlideItems, ProgressBar } from 'sliderx';
+import 'sliderx-react/dist/index.css';
+import { useSlider, SliderProvider, SliderWrapper, SlideItems, ProgressBar } from 'sliderx-react';
 
 function MyCustomSlider() {
   const { activeIndex, setActiveIndex, totalItems } = useSlider();
