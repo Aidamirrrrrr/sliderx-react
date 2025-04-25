@@ -64,6 +64,7 @@ export const useSlider = <T,>({
     }, [items, loop])
 
     const totalItems = extendedItems.length
+    const originalTotalItems = items.length
 
     /* Вычисляем высоту контейнера на основе высоты самого высокого слайда */
     useEffect(() => {
@@ -227,15 +228,26 @@ export const useSlider = <T,>({
         const zIndex = totalItems - Math.abs(offset)
 
         /* Видимость слайдов */
-        const visibility =
-            hideDistantSlides && Math.abs(offset) >= 2 ? 'hidden' : 'visible'
+        let visibility: CSSProperties['visibility'] = 'visible'
+        if (hideDistantSlides && loop && originalTotalItems > 0) {
+            // При loop скрываем слайды, которые дальше половины оригинального количества
+            const maxVisibleOffset = Math.floor(originalTotalItems / 2)
+            if (Math.abs(offset) > maxVisibleOffset) {
+                visibility = 'hidden'
+            }
+        } else if (hideDistantSlides && !loop) {
+            // Без loop скрываем те, что дальше 2-х позиций (можно настроить)
+            if (Math.abs(offset) >= 2) {
+                visibility = 'hidden'
+            }
+        }
 
         return {
             maxWidth: `${slideWidth}px`,
             transform: `translateX(${translateX}px) translateY(${translateY}px) rotate(${rotation}deg)`,
             zIndex,
             transition: isDragging ? 'none' : 'all 0.3s ease',
-            visibility: visibility as CSSProperties['visibility'],
+            visibility: visibility,
         }
     }
 
